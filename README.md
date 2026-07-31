@@ -14,11 +14,14 @@ Gaming/ Workstation PC:
   
 
   Enable fstrim to automatically run
+  
     *sudo systemctl enable --now fstrim.timer*
   
 
   Set the performance profile to high.
+  
     *sudo tuned-adm profile latency-performance* //Best overall profile for hardware performance.
+    
     *tuned-adm active* //Run to verify previous command worked.
 
     kate /etc/tuned/ppd.conf //ensure that performance=throughput-performance. Save and exit.
