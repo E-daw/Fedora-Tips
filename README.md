@@ -1,5 +1,10 @@
 # Fedora-Tips
 
+sudo fstrim -av //Runs fstrim on command.
+
+
+
+
 Gaming/ Workstation PC:
 -----------------------
   Things to Disable
