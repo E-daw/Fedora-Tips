@@ -1,6 +1,6 @@
 # Fedora-Tips
 
-sudo fstrim -av //Runs fstrim on command.
+    sudo fstrim -av //Runs fstrim on command.
 
 Software to Install:
 --------------------
