@@ -35,4 +35,9 @@ Gaming/ Workstation PC:
     kate /etc/tuned/ppd.conf //ensure that performance=throughput-performance. Save and exit.
 
     If running a game server... use the network-latency profile instead of latency-performance.
+
+  Disable Split Lock mitigation.
+
+    sudo grubby --update-kernel=ALL --args="split_lock_detect=off" //Split lock mitigation is a security feature.
+
     
