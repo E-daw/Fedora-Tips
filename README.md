@@ -40,4 +40,8 @@ Gaming/ Workstation PC:
 
     sudo grubby --update-kernel=ALL --args="split_lock_detect=off" //Split lock mitigation is a security feature.
 
+  Allow AMD GPU overclocking.
+  
+      sudo grubby --update-kernel=ALL --args="amdgpu.ppfeaturemask=0xffffffff"
+
     
