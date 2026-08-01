@@ -43,7 +43,10 @@ Gaming/ Workstation PC:
 
   Disable Split Lock mitigation:
 
-    sudo grubby --update-kernel=ALL --args="split_lock_detect=off" //Split lock mitigation is a security feature.
+  Split lock mitigation is a security feature. It's used to prevent exploits when running software through emulation like proton. It's
+  not completely necessary when running games through proton.
+
+    sudo grubby --update-kernel=ALL --args="split_lock_detect=off"
 
   Allow AMD GPU overclocking.
   
@@ -51,12 +54,14 @@ Gaming/ Workstation PC:
       
   Disable ModemManager:
 
-      sudo systemctl disable ModemManager.service //This is cellular modem service, it's not necessary for WiFi/Ethernet
+  This is cellular modem service, it's not necessary for WiFi/Ethernet users.
+
+      sudo systemctl disable ModemManager.service
 
   Dracut optimization:
   
   Fedora packages many drivers with the install to accomidate many machines. Use these commands to build a lighter
-  OS image that's tailored more to your PC's hardware. This doesn't remove anything and you will maintain compatability with other       hardware when running these commands again.
+  OS image that's tailored more to your PC's hardware. This doesn't remove anything and you will maintain compatability with other       hardware when running these commands again. Running these can improve boot times.
 
       echo 'hostonly="yes"' | sudo tee /etc/dracut.conf.d/hostonly.conf
 
