@@ -54,6 +54,7 @@ Gaming/ Workstation PC:
       sudo systemctl disable ModemManager.service //This is cellular modem service, it's not necessary for WiFi/Ethernet
 
   Dracut optimization:
+  
   Fedora packages many drivers with the install to accomidate many machines. Use these commands to build a lighter
   OS image that's tailored more to your PC's hardware. This doesn't remove anything and you will maintain compatability with other       hardware when running these commands again.
 
