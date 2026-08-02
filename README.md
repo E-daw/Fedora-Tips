@@ -85,7 +85,7 @@ Gaming/ Workstation PC:
 
       gamescope -W 3840 -H 2160 -r 240 -- gamemoderun %command% //Replace parameters with your monitors resolution and refreshrate.
 
-      gamescope -w 2560 -h 1440 -W 3840 -H 2160 -r 240 -F fsr --hdr-enabled --adaptive-sync -- %command% //Example with FSR, HDR and adaptive sync.
+      gamescope -w 2560 -h 1440 -W 3840 -H 2160 -r 240 -F fsr --hdr-enabled --adaptive-sync -- %command% //Example with FSR, HDR and adaptive sync. NOTE for FSR, this only uses FSR 1.0. If the game features a higher version please use that instead.
   
       
       
