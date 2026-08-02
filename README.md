@@ -7,14 +7,17 @@
     
     sudo fstrim -av //Runs fstrim on command.
 
+    
+
 Software to Install:
 --------------------
 
     sudo dnf install kate               //installs the kate text editor.
     sudo dnf install corectrl           //Overclocking and hardware management software.
     sudo dnf install fastfetch          //Instant hardware info grabbing software
-    sudo dnf install btop               //Terminal based task manager, highly configurable
-    flatpak install gpu_screen_recorder //Best screen recording utility with lots of configuration
+    sudo dnf install btop               //Terminal based task manager, highly configurable.
+    sudo dnf install gamescope          //Micro compositor for launching games.
+    flatpak install gpu_screen_recorder //Best screen recording utility with lots of configuration.
 
 
 
@@ -66,6 +69,24 @@ Gaming/ Workstation PC:
       echo 'hostonly="yes"' | sudo tee /etc/dracut.conf.d/hostonly.conf
 
       sudo dracut --regenerate-all --force
+
+
+  Gamemode:
+
+  Gamemode optmizes a few settings in the OS for games. It's mostly obsolete but running it doesn't hurt.
+
+  Place the command "gamemoderun" in your launch arguments for the desired steam game.
+
+  Gamescope:
+
+  Gamescope is a micro compositor. Use it if games feel like they have latency or you just want better response times.
+
+  Per game in steam, place this command in your launch arguments...
+
+      gamescope -W 3840 -H 2160 -r 240 -- gamemoderun %command% //Replace parameters with your monitors resolution and refreshrate.
+
+      gamescope -w 2560 -h 1440 -W 3840 -H 2160 -r 240 -F fsr --hdr-enabled --adaptive-sync -- %command% //Example with FSR, HDR and adaptive sync.
+  
       
       
 
