@@ -93,6 +93,7 @@ Gaming/ Workstation PC:
       --hdr-enabled
       --adaptive-sync
       --rt
+      --force-grab-cursor //Use if the cursor's effective interaction point is offset.
   
       
       
