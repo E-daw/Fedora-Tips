@@ -75,6 +75,8 @@ Gaming/ Workstation PC:
 
   Gamemode optmizes a few settings in the OS for games. It's mostly obsolete but running it doesn't hurt.
 
+      systemctl --user enable gamemoded.service
+
   Place the command "gamemoderun" in your launch arguments for the desired steam game.
 
   Gamescope:
