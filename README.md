@@ -81,7 +81,7 @@ Gaming/ Workstation PC:
 
   Gamescope:
 
-  Gamescope is a micro compositor. Use it if games feel like they have latency or you just want better response times.
+  Gamescope is a micro compositor. Use it if games feel like they have latency/stuttering issues or misbehave with scaling. Gamescope works best with titles that aren't supported well on proton or are just old.
 
   Per game in steam, place this command in your launch arguments...
 
