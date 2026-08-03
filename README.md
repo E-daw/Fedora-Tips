@@ -23,9 +23,10 @@ Software to Install:
 Gaming/ Workstation PC:
 -----------------------
   Disable NetowrkManager-wait-online
+
+  This can hang boot times by a few seconds, leave enabled if you know you need it.
   
-    sudo systemctl disable NetworkManager-wait-online.service //This can hang boot times by a few seconds, leave enabled if you know you need it.
-  
+    sudo systemctl disable NetworkManager-wait-online.service 
 
   Enable fstrim to automatically run:
   
@@ -33,12 +34,18 @@ Gaming/ Workstation PC:
   
 
   Set the performance profile to high:
-  
-    sudo tuned-adm profile latency-performance //Best overall profile for hardware performance.
-    
-    tuned-adm active //Run to verify previous command worked.
 
-    kate /etc/tuned/ppd.conf //ensure that performance=throughput-performance. Save and exit.
+  Best overall profile for hardware performance.
+  
+    sudo tuned-adm profile latency-performance 
+
+Run to verify previous command worked.
+    
+    tuned-adm active 
+    
+ensure that performance=throughput-performance. Save and exit.
+
+    kate /etc/tuned/ppd.conf 
 
     If running a game server... use the network-latency profile instead of latency-performance.
 
