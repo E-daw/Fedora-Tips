@@ -12,18 +12,23 @@
 Software to Install:
 --------------------
 \
+
     sudo dnf install kate               //installs the kate text editor.
 \
+
     sudo dnf install corectrl           //Overclocking and hardware management software.
 \
+
     sudo dnf install fastfetch          //Instant hardware info grabbing software
 \
+
     sudo dnf install btop               //Terminal based task manager, highly configurable.
 \
+
     sudo dnf install gamescope          //Micro compositor for launching games.
 \
+
     flatpak install gpu_screen_recorder //Best screen recording utility with lots of configuration.
-\
 
 
 
