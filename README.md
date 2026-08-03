@@ -51,29 +51,29 @@ Gaming/ Workstation PC:
 
   Allow AMD GPU overclocking.
   
-      sudo grubby --update-kernel=ALL --args="amdgpu.ppfeaturemask=0xffffffff"
+    sudo grubby --update-kernel=ALL --args="amdgpu.ppfeaturemask=0xffffffff"
       
   Disable ModemManager:
 
   This is cellular modem service, it's not necessary for WiFi/Ethernet users.
 
-      sudo systemctl disable ModemManager.service
+    sudo systemctl disable ModemManager.service
 
   Dracut optimization:
   
   Fedora packages many drivers with the install to accomidate many machines. Use these commands to build a lighter
   OS image that's tailored more to your PC's hardware. This doesn't remove anything and you will maintain compatability with other       hardware when running these commands again. Running these can improve boot times.
 
-      echo 'hostonly="yes"' | sudo tee /etc/dracut.conf.d/hostonly.conf
+    echo 'hostonly="yes"' | sudo tee /etc/dracut.conf.d/hostonly.conf
 
-      sudo dracut --regenerate-all --force
+    sudo dracut --regenerate-all --force
 
 
   Gamemode:
 
   Gamemode optmizes a few settings in the OS for games. It's mostly obsolete but running it doesn't hurt.
 
-      systemctl --user enable gamemoded.service
+    systemctl --user enable gamemoded.service
 
   Place the command "gamemoderun" in your launch arguments for the desired steam game.
 
@@ -83,9 +83,9 @@ Gaming/ Workstation PC:
 
   Per game in steam, place this command in your launch arguments...
 
-      gamescope -f -W 3840 -H 2160 -r 240 -- gamemoderun %command% //Replace parameters with your monitors resolution and refreshrate. This should be used for the majority of your games.
+    gamescope -f -W 3840 -H 2160 -r 240 -- gamemoderun %command% //Replace parameters with your monitors resolution and refreshrate. This should be used for the majority of your games.
 
-      gamescope -f -w 2560 -h 1440 -W 3840 -H 2160 -r 240 -F fsr --hdr-enabled --adaptive-sync -- %command% //Example with FSR, HDR and adaptive sync. NOTE for FSR, this only uses FSR 1.0. If the game features a higher version please use that instead. The first two integer parameters are the input resolution for FSR. This example would be near the "Quality" slider.
+    gamescope -f -w 2560 -h 1440 -W 3840 -H 2160 -r 240 -F fsr --hdr-enabled --adaptive-sync -- %command% //Example with FSR, HDR and adaptive sync. NOTE for FSR, this only uses FSR 1.0. If the game features a higher version please use that instead. The first two integer parameters are the input resolution for FSR. This example would be near the "Quality" slider.
 
       --force-grab-cursor
       --hdr-enabled
