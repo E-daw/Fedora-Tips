@@ -1,11 +1,14 @@
 # Fedora-Tips
 
-    In your bios, disable unused services features, and controllers like your CPUs iGPU, ethernet if you use wifi, etc.
+In your bios, disable unused services features, and controllers like your CPUs iGPU, ethernet if you use wifi, etc.
 
-    Enable fast boot: CAUTION... sometimes this can introduce stability and firmware issues. Hardware may not be initialized on boot.
+Enable fast boot: CAUTION... sometimes this can introduce stability and firmware issues. Hardware may not be initialized on boot.
 
-    
-    sudo fstrim -av //Runs fstrim on command.
+Useful commands:
+
+Trims your storage drive WARNING: Might take some time to complete
+
+    sudo fstrim -av
 
     
 
