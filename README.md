@@ -87,6 +87,7 @@ ensure that performance=throughput-performance. Save and exit.
   OS image that's tailored more to your PC's hardware. This doesn't remove anything and you will maintain compatability with other       hardware when running these commands again. Running these can improve boot times.
 
     echo 'hostonly="yes"' | sudo tee /etc/dracut.conf.d/hostonly.conf
+.
 
     sudo dracut --regenerate-all --force
 
