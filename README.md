@@ -62,7 +62,7 @@ ensure that performance=throughput-performance. Save and exit.
 
     kate /etc/tuned/ppd.conf 
 
-    If running a game server... use the network-latency profile instead of latency-performance.
+If running a game server... use the network-latency profile instead of latency-performance.
 
   Disable Split Lock mitigation:
 
