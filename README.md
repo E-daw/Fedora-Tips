@@ -5,6 +5,7 @@ In your bios, disable unused services features, and controllers like your CPUs i
 Enable fast boot: CAUTION... sometimes this can introduce stability and firmware issues. Hardware may not be initialized on boot.
 
 Useful commands:
+----------------
 
 Trims your storage drive WARNING: Might take some time to complete
 
