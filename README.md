@@ -4,8 +4,7 @@ In your bios, disable unused services features, and controllers like your CPUs i
 
 Enable fast boot: CAUTION... sometimes this can introduce stability and firmware issues. Hardware may not be initialized on boot.
 
-Useful commands:
-----------------
+# Useful commands:
 
 Trims your storage drive WARNING: Might take some time to complete
 
@@ -19,9 +18,7 @@ Update flatpak packages
 
     
 
-Software to Install:
---------------------
-
+# Software to Install:
 
     sudo dnf install kate               //installs the kate text editor.
     sudo dnf install corectrl           //Overclocking and hardware management software.
@@ -35,8 +32,8 @@ Software to Install:
     flatpak install discord
     flatpak install gpu_screen_recorder //Best screen recording utility with lots of configuration.
 
-Gaming/ Workstation PC:
------------------------
+# Gaming/ Workstation PC:
+
   Disable NetowrkManager-wait-online
 
   This can hang boot times by a few seconds, leave enabled if you know you need it.
@@ -65,6 +62,7 @@ ensure that performance=throughput-performance. Save and exit.
 If running a game server... use the network-latency profile instead of latency-performance.
 
   Disable Split Lock mitigation:
+  ------------------------------
 
   Split lock mitigation is a security feature. It's used to prevent exploits when running software through emulation like proton. It's
   not completely necessary when running games through proton.
