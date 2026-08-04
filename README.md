@@ -123,7 +123,11 @@ Example with FSR, HDR and adaptive sync. NOTE for FSR, this only uses FSR 1.0. I
 
 Networking with IWD:
 --------------------
-  
+wpa_supplicant is reliable but not very fast or effecient. Switching to IWD can fix network latency issues found in gaming.
+
+Start by installing iwd.
+
+    sudo dnf install iwd
       
       
 
