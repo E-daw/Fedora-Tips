@@ -19,6 +19,7 @@ Software to Install:
     sudo dnf install btop               //Terminal based task manager, highly configurable.
     sudo dnf install gamescope          //Micro compositor for launching games.
     sudo dnf install steam
+    sudo dnf install kden-live
     
     flatpak install discord
     flatpak install gpu_screen_recorder //Best screen recording utility with lots of configuration.
