@@ -69,17 +69,19 @@ If running a game server... use the network-latency profile instead of latency-p
 
     sudo grubby --update-kernel=ALL --args="split_lock_detect=off"
 
-  Allow AMD GPU overclocking.
-  
+  Allow AMD GPU overclocking:
+  ---------------------------
     sudo grubby --update-kernel=ALL --args="amdgpu.ppfeaturemask=0xffffffff"
       
   Disable ModemManager:
+  ---------------------
 
   This is cellular modem service, it's not necessary for WiFi/Ethernet users.
 
     sudo systemctl disable ModemManager.service
 
   Dracut optimization:
+  --------------------
   
   Fedora packages many drivers with the install to accomidate many machines. Use these commands to build a lighter
   OS image that's tailored more to your PC's hardware. This doesn't remove anything and you will maintain compatability with other       hardware when running these commands again. Running these can improve boot times.
@@ -91,6 +93,7 @@ If running a game server... use the network-latency profile instead of latency-p
 
 
   Gamemode:
+  ---------
 
   Gamemode optmizes a few settings in the OS for games. It's mostly obsolete but running it doesn't hurt.
 
@@ -99,6 +102,7 @@ If running a game server... use the network-latency profile instead of latency-p
   Place the command "gamemoderun" in your launch arguments for the desired steam game.
 
   Gamescope:
+  ----------
 
   Gamescope is a micro compositor. Use it if games feel like they have latency/stuttering issues or misbehave with scaling. Gamescope works best with titles that aren't supported well on proton or are just old.
 
@@ -116,6 +120,9 @@ Example with FSR, HDR and adaptive sync. NOTE for FSR, this only uses FSR 1.0. I
       --hdr-enabled
       --adaptive-sync
       --force-grab-cursor //Use if the cursor's effective interaction point is offset.
+
+Networking with IWD:
+--------------------
   
       
       
