@@ -10,6 +10,12 @@ Useful commands:
 Trims your storage drive WARNING: Might take some time to complete
 
     sudo fstrim -av
+Update your computer and software packages
+
+    sudo dnf upgrade --refresh
+Update flatpak packages
+
+    flatpak upgrade
 
     
 
