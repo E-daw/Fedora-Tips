@@ -121,6 +121,27 @@ Example with FSR, HDR and adaptive sync. NOTE for FSR, this only uses FSR 1.0. I
       --adaptive-sync
       --force-grab-cursor //Use if the cursor's effective interaction point is offset.
 
+CachyOS Kernel:
+---------------
+The CatchyOS kernel can maximize system responsiveness and minimize latency. the CachyOS kernel uses BORE CPU Scheduler which is more suitable for tasks like gaming.
+
+First check if your CPU is compatible. It needs to say x86_64_v3 or higher, otherwise DO NOT CONTINUE.
+
+    /lib64/ld-linux-x86-64.so.2 --help | grep "(supported, searched)"
+If you see x86_64_v3 continue. The next command enables custom kernels to run on your operating system.
+
+    sudo setsebool -P domain_kernel_load_modules on
+The next commands install the kernel.
+
+    sudo dnf copr enable bieszczaders/kernel-cachyos-lto
+    sudo dnf install kernel-cachyos-lto kernel-cachyos-lto-devel-matched
+
+Next, reboot, and you should finished.
+
+    sudo systemctl reboot
+
+You can use the fastfetch command or uname-r to see if the CatchyOS kernel is running.
+
 Networking with IWD:
 --------------------
 wpa_supplicant is reliable but not very fast or effecient. Switching to IWD can fix network latency issues found in gaming.
