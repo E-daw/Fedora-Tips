@@ -123,7 +123,7 @@ Example with FSR, HDR and adaptive sync. NOTE for FSR, this only uses FSR 1.0. I
 
 CachyOS Kernel:
 ---------------
-The CatchyOS kernel can maximize system responsiveness and minimize latency. the CachyOS kernel uses BORE CPU Scheduler which is more suitable for tasks like gaming.
+The CachyOS kernel can maximize system responsiveness and minimize latency. the CachyOS kernel uses BORE CPU Scheduler which is more suitable for tasks like gaming.
 
 First check if your CPU is compatible. It needs to say x86_64_v3 or higher, otherwise DO NOT CONTINUE.
 
@@ -140,7 +140,7 @@ Next, reboot, and you should finished.
 
     sudo systemctl reboot
 
-You can use the fastfetch command or uname-r to see if the CatchyOS kernel is running.
+You can use the fastfetch command or uname-r to see if the CachyOS kernel is running.
 
 Networking with IWD:
 --------------------
